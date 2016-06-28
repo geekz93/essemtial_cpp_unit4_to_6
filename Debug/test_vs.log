@@ -1,0 +1,33 @@
+﻿生成启动时间为 2016/6/18 16:58:07。
+     1>项目“E:\tempData\test_vs\test_vs\test_vs.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt class_test.cpp test.cpp Triangular_iterator.cpp
+         Triangular_iterator.cpp
+     1>e:\tempdata\test_vs\test_vs\class_test.h(21): error C2027: 使用了未定义类型“Triangular_iterator”
+                 e:\tempdata\test_vs\test_vs\class_test.h(12) : 参见“Triangular_iterator”的声明
+     1>e:\tempdata\test_vs\test_vs\class_test.h(21): error C2440: “<function-style-cast>”: 无法从“const int”转换为“Triangular_iterator”
+                 源或目标有不完整类型
+     1>e:\tempdata\test_vs\test_vs\class_test.h(22): error C2027: 使用了未定义类型“Triangular_iterator”
+                 e:\tempdata\test_vs\test_vs\class_test.h(12) : 参见“Triangular_iterator”的声明
+     1>e:\tempdata\test_vs\test_vs\class_test.h(22): error C2440: “<function-style-cast>”: 无法从“const int”转换为“Triangular_iterator”
+                 源或目标有不完整类型
+     1>e:\tempdata\test_vs\test_vs\triangular_iterator.cpp(9): warning C4018: “>”: 有符号/无符号不匹配
+     1>e:\tempdata\test_vs\test_vs\triangular_iterator.cpp(15): error C2511: “bool Triangular_iterator::operator ==(const Triangular_iterator &) const”:“Triangular_iterator”中没有找到重载的成员函数
+                 e:\tempdata\test_vs\test_vs\triangular_iterator.h(7) : 参见“Triangular_iterator”的声明
+     1>e:\tempdata\test_vs\test_vs\triangular_iterator.cpp(16): error C2597: 对非静态成员“Triangular_iterator::_index”的非法引用
+     1>e:\tempdata\test_vs\test_vs\triangular_iterator.cpp(16): error C3867: “Triangular_iterator::_index”:  函数调用缺少参数列表；请使用“&Triangular_iterator::_index”创建指向成员的指针
+     1>e:\tempdata\test_vs\test_vs\triangular_iterator.cpp(21): error C2511: “bool Triangular_iterator::operator !=(const Triangular_iterator &) const”:“Triangular_iterator”中没有找到重载的成员函数
+                 e:\tempdata\test_vs\test_vs\triangular_iterator.h(7) : 参见“Triangular_iterator”的声明
+     1>e:\tempdata\test_vs\test_vs\triangular_iterator.cpp(22): error C2597: 对非静态成员“Triangular_iterator::_index”的非法引用
+     1>e:\tempdata\test_vs\test_vs\triangular_iterator.cpp(22): error C3867: “Triangular_iterator::_index”:  函数调用缺少参数列表；请使用“&Triangular_iterator::_index”创建指向成员的指针
+     1>e:\tempdata\test_vs\test_vs\triangular_iterator.cpp(35): error C2065: “index”: 未声明的标识符
+         test.cpp
+         class_test.cpp
+     1>e:\tempdata\test_vs\test_vs\class_test.cpp(18): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\tempdata\test_vs\test_vs\class_test.cpp(67): warning C4018: “<”: 有符号/无符号不匹配
+         正在生成代码...
+     1>已完成生成项目“E:\tempData\test_vs\test_vs\test_vs.vcxproj”(Rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.64
