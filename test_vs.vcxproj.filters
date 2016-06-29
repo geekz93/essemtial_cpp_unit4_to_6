@@ -15,21 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="class_test.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Triangular_iterator.cpp">
+    <ClCompile Include="user_profile.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="class_test.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Triangular_iterator.h">
+    <ClInclude Include="user_profile.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

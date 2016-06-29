@@ -10,6 +10,13 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="user_profile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="user_profile.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A2049CAD-F2E8-48C3-A3CA-67D506355302}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -77,15 +84,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="class_test.cpp" />
-    <ClCompile Include="test.cpp" />
-    <ClCompile Include="Triangular_iterator.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="class_test.h" />
-    <ClInclude Include="Triangular_iterator.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
