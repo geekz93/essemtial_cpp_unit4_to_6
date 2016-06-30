@@ -24,7 +24,7 @@ ostream& operator<<(ostream& os, UserProfile& rhs)
 	return os;
 }
 
-void operator>>(istream& is, UserProfile& rhs)
+istream& operator>>(istream& is, UserProfile& rhs)
 {
 	string name, level;
 	int log_count, guess_count, correct_guess;
@@ -36,16 +36,36 @@ void operator>>(istream& is, UserProfile& rhs)
 	rhs.set_guess_count(guess_count);
 	rhs.set_correct_guess(correct_guess);
 	rhs.prcentage_correct();
-
+	return is;
 }
 
 void UserProfile::prcentage_correct() const
 {
-	if (0 == _guess_count)
-	{
-		_prcentage_correct = 0;
-		return;
-	}
+	//使用三目运算符
 	// int除int 小于 1时结果总为0，因此需要进行类型转换
-	_prcentage_correct = (double)_correct_guess / _guess_count;
+	_prcentage_correct = _guess_count ? 
+		(double)_correct_guess / _guess_count : 0.0;
+}
+
+void UserProfile::_init_level()
+{
+	_level_map["beginner"] = beginner;
+	_level_map["intermedia"] = intermedia;
+	_level_map["advance"] = advance;
+	_level_map["guru"] = guru;
+}
+
+string UserProfile::get_current_level()
+{//限定只有四个等级
+	if ( _level_map.empty() )
+		_init_level();
+
+	string level_table[] = { "beginner",
+		"intermedia", "advance", "guru" };
+
+	map<string, uLevel>::iterator it;
+	uLevel level;
+	level = ((it = _level_map.find(_current_level)) != _level_map.end()) ?
+		it->second : beginner;
+	return level_table[level];
 }

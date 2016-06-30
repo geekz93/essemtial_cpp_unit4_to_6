@@ -3,6 +3,7 @@
 
 #include<string>
 #include<iostream>
+#include<map>
 using namespace std;
 ////////////////////////////////////
 //问题:
@@ -13,12 +14,14 @@ using namespace std;
 class UserProfile
 {
 public:
+	enum uLevel{ beginner, intermedia, advance, guru };
+
 	UserProfile();
 	UserProfile(string user_name, string level);
 
 	//get user's information
 	string get_player() const{ return _player; }
-	string get_current_level() const{ return _current_level; }
+	string get_current_level();
 	int get_log_count() const{ return _log_count; }
 	int get_guess_count() const{ return _guess_count; }
 	int get_correct_guess() const{ return _correct_guess; }
@@ -38,6 +41,8 @@ public:
 	void correct_guess(){ _correct_guess++; }
 
 private:
+	map<string, uLevel> _level_map; //使用字典储存用户等级
+	void _init_level();
 	string _player;
 	int _log_count;
 	int _guess_count;
@@ -48,6 +53,6 @@ private:
 };
 
 ostream& operator<<(ostream& os, UserProfile& rhs);
-void operator>>(istream& is, UserProfile& rhs);
+istream& operator>>(istream& is, UserProfile& rhs);
 
 #endif
