@@ -1,13 +1,16 @@
-#include"user_profile.h"
 #include<iostream>
+#include "LibMat.h"
 using namespace std;
+//const LibMat& mat, 调用的print函数也要加 const
+void print(const LibMat& mat)
+{
+	cout << "global print(): print mat.print()\n";
+	mat.print();
+}
+
 int main()
 {
-	UserProfile ann;
-	cin >> ann;
-	cout << ann;
-	ann.guess();
-	ann.correct_guess();
-	cout << ann;
+	AudioBook a("Little Prince", "xiuBoli", "this is a story");
+	print(a);
 	return 0;
 }

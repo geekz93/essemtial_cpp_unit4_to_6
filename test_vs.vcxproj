@@ -12,10 +12,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="user_profile.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="user_profile.h" />
+    <ClInclude Include="LibMat.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A2049CAD-F2E8-48C3-A3CA-67D506355302}</ProjectGuid>

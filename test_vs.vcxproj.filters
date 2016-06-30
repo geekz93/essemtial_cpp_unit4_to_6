@@ -18,12 +18,9 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="user_profile.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="user_profile.h">
+    <ClInclude Include="LibMat.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
