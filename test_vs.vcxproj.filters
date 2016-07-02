@@ -18,9 +18,21 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Fibonacci.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Pell.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LibMat.h">
+    <ClInclude Include="num_seq_base.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Fibonacci.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Pell.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

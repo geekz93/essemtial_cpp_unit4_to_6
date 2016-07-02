@@ -12,9 +12,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Fibonacci.cpp" />
+    <ClCompile Include="Pell.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LibMat.h" />
+    <ClInclude Include="num_seq_base.h" />
+    <ClInclude Include="Fibonacci.h" />
+    <ClInclude Include="Pell.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A2049CAD-F2E8-48C3-A3CA-67D506355302}</ProjectGuid>

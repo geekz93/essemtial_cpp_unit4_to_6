@@ -1,16 +1,25 @@
 #include<iostream>
-#include "LibMat.h"
+#include "Fibonacci.h"
+#include "Pell.h"
 using namespace std;
-//const LibMat& mat, 调用的print函数也要加 const
-void print(const LibMat& mat)
+
+ostream& operator<<(ostream& os, const num_sequence& ns)
 {
-	cout << "global print(): print mat.print()\n";
-	mat.print();
+	return ns.print(os);
 }
+
+
 
 int main()
 {
-	AudioBook a("Little Prince", "xiuBoli", "this is a story");
-	print(a);
+	Fibonacci fib(10, 1);
+	cout << fib << endl;
+	
+	Pell pell(10, 1);
+	cout << pell << endl;
+
+	Pell pell_02(5, 4);
+	cout << pell_02 << endl;
+
 	return 0;
 }
