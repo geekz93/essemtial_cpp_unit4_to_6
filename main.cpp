@@ -8,8 +8,6 @@ ostream& operator<<(ostream& os, const num_sequence& ns)
 	return ns.print(os);
 }
 
-
-
 int main()
 {
 	Fibonacci fib(10, 1);
@@ -23,3 +21,4 @@ int main()
 
 	return 0;
 }
+

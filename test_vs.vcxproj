@@ -13,6 +13,7 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Fibonacci.cpp" />
+    <ClCompile Include="num_seq_base.cpp" />
     <ClCompile Include="Pell.cpp" />
   </ItemGroup>
   <ItemGroup>

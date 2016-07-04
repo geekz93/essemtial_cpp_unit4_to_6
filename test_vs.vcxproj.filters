@@ -24,6 +24,9 @@
     <ClCompile Include="Pell.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="num_seq_base.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="num_seq_base.h">

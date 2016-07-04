@@ -7,25 +7,14 @@
 class Fibonacci : public num_sequence
 {
 public:
-	Fibonacci(int len = 1, int beg_pos = 1)
-	: _length(len), _beg_pos(beg_pos){}
-
-	/*virtual int         elem(int pos) const;
-	virtual const char* what_am_i() const{ return "Fibonacci"; }
-	virtual ostream&    print(ostream &os = cout) const;*/
-
-	int         elem(int pos) const;
-	const char* what_am_i() const{ return "Fibonacci"; }
-	ostream&    print(ostream &os = cout) const;
+	Fibonacci(int len = 1, int beg_pos = 1, vector<int>& elems = _elems)
+	: num_sequence(elems, len, beg_pos){}
 	
-	int                 length() const{ return _length; }
-	int                 beg_pos() const{ return _beg_pos; }
-	bool				check_integrity(int pos) const;
+	const char* what_am_i() const{ return "Fibonacci"; }
+
 
 protected:
 	virtual void        gen_elems(int pos) const;
-	int                 _length;
-	int                 _beg_pos;
 	static vector<int>  _elems;
 };
 
