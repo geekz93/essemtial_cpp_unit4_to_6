@@ -12,7 +12,6 @@ public:
 	
 	const char* what_am_i() const{ return "Fibonacci"; }
 
-
 protected:
 	virtual void        gen_elems(int pos) const;
 	static vector<int>  _elems;
