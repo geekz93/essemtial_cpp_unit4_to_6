@@ -18,24 +18,12 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Fibonacci.cpp">
+    <ClCompile Include="BinaryTree.cpp">
       <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Pell.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="num_seq_base.cpp">
-      <Filter>头文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="num_seq_base.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Fibonacci.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Pell.h">
+    <ClInclude Include="BinaryTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
