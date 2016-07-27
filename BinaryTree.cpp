@@ -33,6 +33,16 @@ insert_value(const valType &val)
 	}
 }
 
+template<typename valType>
+void BTnode<valType>::
+lchild_leaf(BTnode *leaf, BTnode *subtree)
+{
+	while (subtree->_lchild)
+		subtree = subtree->_lchild;
+	subtree->_lchild = leaf;
+}
+
+
 template <typename elemType>
 void BinaryTree<elemType>::
 remove(const elemType &elem)
@@ -44,15 +54,6 @@ remove(const elemType &elem)
 		else
 			_root->remove_value(elem, _root);
 	}
-}
-
-template<typename valType>
-void BTnode<valType>::
-lchild_leaf(BTnode *leaf, BTnode *subtree)
-{
-	while (subtree->_lchild)
-		subtree = subtree->_lchild;
-	subtree->_child = leaf;
 }
 
 template<typename elemType>
@@ -123,12 +124,21 @@ clear(BTnode<elemType>*pt)
 
 template <typename valType>
 void BTnode<valType>::
-preorder(BTnode *pt, ostream &os)const
+display_val(BTnode *pt, ostream &os)
+{
+	print(pt, os);
+}
+
+template <typename elemType>
+void BinaryTree<elemType>::
+preorder(BTnode<elemType> *pt)
 {
 	if (pt)
 	{
-		diaplay_val(pt, os);
-		if (pt->_lchild) preorder(pt->_lchild, os);
-		if (pt->_rchild) preorder(pt->_rchild, os);
+		//display_val(pt, os);
+		cout << pt->_val << " ";
+		if (pt->_lchild) preorder(pt->_lchild);
+		if (pt->_rchild) preorder(pt->_rchild);
 	}
 }
+

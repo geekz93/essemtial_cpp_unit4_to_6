@@ -16,9 +16,11 @@ public:
 	BTnode(const valType &val);
 
 	void insert_value(const valType &val);
-	void lchild_leaf(BTnode *leaf, BTnode *subtree);
+	static void lchild_leaf(BTnode *leaf, BTnode *subtree);
 	void remove_value(const valType &val, BTnode *& prev);
-	void preorder(BTnode *pt, ostream &os)const;
+	void preorder(BTnode *pt, ostream &os=cout);
+	void display_val(BTnode *pt, ostream &os);
+	void print(BTnode *pt, ostream &os){ os << pt->_val; }
 
 private:
 	valType _val;
@@ -52,11 +54,15 @@ public:
 	void insert(const elemType &elem);
 	void remove(const elemType &elem);
 	void remove_root();
+	void preorder(){ preorder(_root); }
+	
+	//void print(BTnode *pt, ostream &os = cout){ os << pt->_val; };
 
 private:
 	BTnode<elemType> *_root;
 	void clear(BTnode<elemType>*);
 	void copy(BTnode<elemType>*tar, BTnode<elemType>*src);
+	void preorder(BTnode<elemType> *pt);
 };
 
 template<typename elemType>

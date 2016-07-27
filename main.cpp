@@ -4,6 +4,8 @@
 #include<string>
 using namespace std;
 
+//di
+
 int main()
 {
 	BinaryTree<string> bt;
@@ -14,6 +16,13 @@ int main()
 	bt.insert("Chris");
 	bt.insert("Pooh");
 	bt.insert("Kanga");
+	
+	bt.preorder();
+	cout << endl;
+	bt.remove("Piglet");
+
+	bt.preorder();
+	//bt.remove_root();
 	return 0;
 }
 
